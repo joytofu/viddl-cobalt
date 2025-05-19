@@ -5,72 +5,105 @@
     import SectionHeading from "$components/misc/SectionHeading.svelte";
 </script>
 
+This Privacy Policy describes how Vetra ("the Service," "we," "us," or "our") collects, uses, and discloses information when you use our web-based video/MP3 downloader tool available at https://vetra.top.
+
 <section id="general">
 <SectionHeading
-    title={$t("about.heading.general")}
+    title="Our Commitment to Your Privacy"
     sectionId="general"
 />
 
-cobalt's privacy policy is simple: we don't collect or store anything about you. what you do is solely your business, not ours or anyone else's.
-
-these terms are applicable only when using the official cobalt instance. in other cases, you may need to contact the hoster for accurate info.
+We understand that your privacy is important. Vetra is designed to be a simple and direct tool for downloading publicly available online content. We aim to collect as little personal information as possible while providing our service.
 </section>
 
 <section id="local">
 <SectionHeading
-    title={$t("about.heading.local")}
+    title="Information We Do Not Collect"
     sectionId="local"
 />
 
-tools that use on-device processing work offline, locally, and never send any data anywhere. they are explicitly marked as such whenever applicable.
+- We do not require you to create an account or register. You can use our service without providing any personal identifiers such as your name, email address, or location.
+- We do not store copies of the videos or audio files you download. The downloading process is a direct transfer from the source platform to your device, facilitated by our tool.
+- We do not track your download history associated with a persistent identifier. While server logs may temporarily record requests, these are typically anonymous and used for operational purposes only (see "Log Data" below).
+
 </section>
 
 <section id="saving">
 <SectionHeading
-    title={$t("about.heading.saving")}
+    title="Information We May Collect (Limited)"
     sectionId="saving"
 />
 
-when using saving functionality, in some cases cobalt will encrypt & temporarily store information needed for tunneling. it's stored in processing server's RAM for 90 seconds and irreversibly purged afterwards. no one has access to it, even instance owners, as long as they don't modify the official cobalt image.
+When you access or use the Service, we may automatically collect certain limited information. This information is primarily technical and non-personal.
 
-processed/tunneled files are never cached anywhere. everything is tunneled live. cobalt's saving functionality is essentially a fancy proxy service.
+- Log Data: Our servers automatically record information that your browser sends whenever you visit our website. This Log Data may include information such as your computer's Internet Protocol ("IP") address (often anonymized or truncated), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, and other statistics. This data is used for monitoring the health and performance of our service, troubleshooting, and preventing abuse.   
+- Usage Data: We may collect information about how you use the Service, such as the types of links you process or the frequency of use. This data is aggregated and anonymized to help us understand popular platforms and improve our service. It is not linked to individual users.
+  
 </section>
 
 <section id="encryption">
 <SectionHeading
-    title={$t("about.heading.encryption")}
+    title="How We Use Information"
     sectionId="encryption"
 />
 
-temporarily stored tunnel data is encrypted using the AES-256 standard. decryption keys are only included in the access link and never logged/cached/stored anywhere. only the end user has access to the link & encryption keys. keys are generated uniquely for each requested tunnel.
+We use the limited information we collect for the following purposes:
+
+- To provide and maintain the Service.
+- To monitor the usage of the Service.
+- To detect, prevent, and address technical issues.
+- To improve and optimize the functionality of the Service.   
+- To prevent abuse and ensure the security of our service.
+
 </section>
 
-{#if env.PLAUSIBLE_ENABLED}
-<section id="plausible">
+
+<section id="cookies">
 <SectionHeading
-    title={$t("about.heading.plausible")}
-    sectionId="plausible"
+    title="Cookies"
+    sectionId="cookies"
 />
 
-for sake of privacy, we use [plausible's anonymous traffic analytics](https://plausible.io/) to get an approximate number of active cobalt users. no identifiable information about you or your requests is ever stored. all data is anonymized and aggregated. the plausible instance we use is hosted & managed by us.
+We may use cookies and similar tracking technologies to track the activity on our Service and hold certain information. Cookies are files with a small amount of data which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your device. Tracking technologies also used are beacons, tags, and scripts to collect and track information and to improve and analyze our Service.   
 
-plausible doesn't use cookies and is fully compliant with GDPR, CCPA, and PECR.
+- We primarily use functional or necessary cookies to ensure the website operates correctly.
+- We may use analytical cookies (e.g., via Google Analytics, with IP anonymization enabled if possible) to understand website traffic and usage patterns in an aggregated and anonymized way.
+  
+You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.   
 
-[learn more about plausible's dedication to privacy.](https://plausible.io/privacy-focused-web-analytics)
-
-if you wish to opt out of anonymous analytics, you can do it in [privacy settings](/settings/privacy#analytics).
 </section>
-{/if}
 
-<section id="cloudflare">
+
+<section id="Third-Party Services">
 <SectionHeading
-    title={$t("about.heading.cloudflare")}
-    sectionId="cloudflare"
+    title="Third-Party Services"
+    sectionId="Third-Party Services"
 />
 
-we use cloudflare services for ddos & bot protection. we also use cloudflare pages for deploying & hosting the static web app. all of these are required to provide the best experience for everyone. it's the most private & reliable provider that we know of.
+We may use third-party services (e.g., hosting providers, analytics services). These third parties may have access to your limited Log Data or Usage Data only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose
 
-cloudflare is fully compliant with GDPR and HIPAA.
-
-[learn more about cloudflare's dedication to privacy.](https://www.cloudflare.com/trust-hub/privacy-and-data-protection/)
 </section>
+
+<section id="Security">
+<SectionHeading
+    title="Security"
+    sectionId="Security"
+/>
+
+The security of your information is important to us, but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your limited information, we cannot guarantee its absolute security.
+
+</section>
+
+<section id="contact-us">
+<SectionHeading
+    title="Contact Us"
+    sectionId="contact-us"
+/>
+
+If you have any questions about this Privacy Policy, please contact us:   
+
+By email: support@vetra.top
+
+</section>
+
+

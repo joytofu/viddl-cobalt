@@ -29,18 +29,21 @@ const partners = {
 }
 
 const donate = {
-    stripe: "https://donate.stripe.com/3cs2cc6ew1Qda4wbII",
-    liberapay: "https://liberapay.com/imput/donate",
+    stripe: "https://donate.stripe.com/8wM2b1b1feIE7ZKeUU",
+    liberapay: "https://liberapay.com/BrainTitan/donate",
     crypto: {
-        ethereum: "0x4B4cF23051c78c7A7E0eA09d39099621c46bc302",
-        monero: "4B1SNB6s8Pq1hxjNeKPEe8Qa8EP3zdL16Sqsa7QDoJcUecKQzEj9BMxWnEnTGu12doKLJBKRDUqnn6V9qfSdXpXi3Nw5Uod",
-        solana: "LJx4mxhvLJqDs65u4kxNgoKYGbZFfGCKGQjNApvfB7h",
-        litecoin: "ltc1qvp0xhrk2m7pa6p6z844qcslfyxv4p3vf95rhna",
-        bitcoin: "bc1qlvcnlnyzfsgnuxyxsv3k0p0q0yln0azjpadyx4",
-        ton: "UQA3SO-hHZq1oCCT--u6or6ollB8fd2o52aD8mXiLk9iDZd3",
+        Ethereum: "0x7eab4ea12d3a57ae2811be24c94c024c7f0e6846",
+        Monero: "86jQ38U4oyvhaAx2jvE77rN7TDjH2SRJJgcwgTGxYfBAJrJ77BR2QZt8L3AtGMjDBE2ktLguBrNZB1z5ev5ykT589EYoQJb",
+        Solana: "7pCsFX37sYKZihuH4NqXH5smiG6JqAG5z3YFuxkHRC4A",
+        Litecoin: "LaupaJ7DjXuTXwV1nzeu9jJ9yHk7tEZZtp",
+        Bitcoin: "34AnHVvUPibT8mVHaFx48wd3XLg5zwwEN3",
+        Toncoin: "UQAqpRHMygiiB4M2wC_3V_bjT5Mv2tbTJrJHFOzpGn_Vnh0M",
+        Dogecoin: "DR4BXkNX4vQLt47kad4KjBYKhrbyhujFHR",
+        TRON: "TWNcJRxoEqBDdzn1UFDCdB2rgWuDwHdgjH",
+        Uniswap: "0x7eab4ea12d3a57ae2811be24c94c024c7f0e6846",
     },
     other: {
-        boosty: "https://boosty.to/wukko/donate",
+        
     }
 };
 
@@ -55,7 +58,7 @@ const docs = {
     apiLicense: "https://github.com/imputnet/cobalt/blob/main/api/LICENSE",
 };
 
-const defaultApiURL = "https://api.cobalt.tools";
+const defaultApiURL = "https://api.vetra.top";
 
 export { donate, defaultApiURL, contacts, partners, siriShortcuts, docs };
 export default variables;

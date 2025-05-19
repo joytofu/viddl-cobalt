@@ -70,6 +70,8 @@ const config = {
                     "self",
                     "wasm-unsafe-eval",
                     "challenges.cloudflare.com",
+                    "www.googletagmanager.com",
+                    "sha256-agcr0peth1MshZ7m/6LWnKnQ3oSm1JJPm1ueahsd0nA=",
 
                     // eslint-disable-next-line no-undef
                     process.env.WEB_PLAUSIBLE_HOST ? process.env.WEB_PLAUSIBLE_HOST : "",

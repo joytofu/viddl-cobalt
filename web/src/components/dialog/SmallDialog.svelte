@@ -29,11 +29,7 @@
         class:meowbalt-visible={meowbalt}
         class:align-left={leftAligned}
     >
-        {#if meowbalt}
-            <div class="meowbalt-container">
-                <Meowbalt emotion={meowbalt} />
-            </div>
-        {/if}
+        
         <div class="dialog-inner-container">
             {#if title || icon}
                 <div class="popup-header">

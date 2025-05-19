@@ -27,7 +27,7 @@
 </script>
 
 <div class="open-file-container" class:dragged-over={draggedOver}>
-    <Meowbalt emotion="question" />
+    
 
     <button class="open-file-button" on:click={openFile}>
         <div class="dashed-stroke">

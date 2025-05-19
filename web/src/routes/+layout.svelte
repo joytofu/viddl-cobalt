@@ -71,7 +71,7 @@
 
 <div
     style="display: contents"
-    data-theme={browser ? $currentTheme : undefined}
+    data-theme="light"
     lang={$locale}
 >
     <div

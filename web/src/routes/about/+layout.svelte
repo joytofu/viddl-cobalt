@@ -28,12 +28,7 @@
                 icon={IconComet}
                 iconColor="blue"
             />
-            <PageNavTab
-                path="/about/community"
-                title={$t("about.page.community")}
-                icon={IconUsersGroup}
-                iconColor="green"
-            />
+            
         </PageNavSection>
 
         <PageNavSection>
@@ -49,12 +44,7 @@
                 icon={IconLock}
                 iconColor="gray"
             />
-            <PageNavTab
-                path="/about/credits"
-                title={$t("about.page.credits")}
-                icon={IconLicense}
-                iconColor="gray"
-            />
+            
         </PageNavSection>
     </svelte:fragment>
 

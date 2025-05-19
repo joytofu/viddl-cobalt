@@ -3,7 +3,8 @@
 </script>
 
 <div id="cobalt-logo">
-    <IconCobalt />
+    <img src="/favicon.png"  width="100%" height="100%"/>
+    
 </div>
 
 <style>

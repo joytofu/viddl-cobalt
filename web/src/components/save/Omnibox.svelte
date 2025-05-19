@@ -126,15 +126,10 @@
 
 <svelte:window on:keydown={handleKeydown} />
 
-<!--
-    if you want to remove the community instance label,
-    refer to the license first https://github.com/imputnet/cobalt/tree/main/web#license
--->
-{#if env.DEFAULT_API || (!$page.url.host.endsWith(".cobalt.tools") && $page.url.host !== "cobalt.tools")}
+
     <div id="instance-label">
-        {$t("save.label.community_instance")}
+        All Platforms, One Downloader 
     </div>
-{/if}
 
 <div id="omnibox">
     <div

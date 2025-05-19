@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="viewport-fit=cover, width=device-width, height=device-height, initial-scale=1, maximum-scale=1">
-        <meta name="application-name" content="cobalt">
+        <meta name="application-name" content="Vetra">
         <meta name="og:type" content="article">
         <meta name="twitter:card" content="summary">
 
@@ -11,7 +11,7 @@
 
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="apple-mobile-web-app-title" content="cobalt">
+        <meta name="apple-mobile-web-app-title" content="Vetra">
 
         <meta name="darkreader-lock">
         <meta name="color-scheme" content="only light">
@@ -59,6 +59,16 @@
                     document.body.id = `body-${appearance.theme}`;
                 }
             });
+        </script>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LMNPH4XL8P"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-LMNPH4XL8P');
         </script>
     </head>
     <body data-sveltekit-preload-data="hover" data-sveltekit-preload-code="eager">

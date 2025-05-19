@@ -5,53 +5,49 @@
 
 <section id="general">
 <SectionHeading
-    title={$t("about.heading.general")}
+    title="General Terms"
     sectionId="general"
 />
 
-these terms are applicable only when using the official cobalt instance.
-in other cases, you may need to contact the hoster for accurate info.
+These terms are applicable only when using Vetra.
 </section>
 
 <section id="saving">
 <SectionHeading
-    title={$t("about.heading.saving")}
+    title="Saving"
     sectionId="saving"
 />
 
-saving functionality simplifies downloading content from the internet and takes zero liability for what the saved content is used for.
+Saving functionality simplifies downloading content from the internet and takes zero liability for what the saved content is used for.
 processing servers work like advanced proxies and don't ever write any content to disk.
-everything is handled in RAM and permanently purged once the tunnel is done.
-we have no downloading logs and can't identify anyone.
+Everything is handled in RAM and permanently purged once the tunnel is done.
+We have no downloading logs and can't identify anyone.
 
-[you can read more about how tunnels work in our privacy policy.](/about/privacy)
 </section>
 
 <section id="responsibility">
 <SectionHeading
-    title={$t("about.heading.responsibility")}
+    title="User Responsibility"
     sectionId="responsibility"
 />
 
-you (end user) are responsible for what you do with our tools, how you use and distribute resulting content.
-please be mindful when using content of others and always credit original creators.
-make sure you don't violate any terms or licenses.
+You (end user) are responsible for what you do with our tools, how you use and distribute resulting content.
+Please be mindful when using content of others and always credit original creators.
+Make sure you don't violate any terms or licenses.
 
-when used in educational purposes, always cite sources and credit original creators.
+When used in educational purposes, always cite sources and credit original creators.
 
-fair use and credits benefit everyone.
+Fair use and credits benefit everyone.
 </section>
 
 <section id="abuse">
 <SectionHeading
-    title={$t("about.heading.abuse")}
+    title="Reporting Abuse"
     sectionId="abuse"
 />
 
-we have no way of detecting abusive behavior automatically because cobalt is 100% anonymous.
-however, you can report such activities to us via email and we'll do our best to comply manually: abuse[at]imput.net
+We have no way of detecting abusive behavior automatically because Vetra is 100% anonymous.
+however, you can report such activities to us via email and we'll do our best to comply manually: abuse@vetra.top
 
-**this email is not intended for user support, you will not get a response if your concern is not related to abuse.**
-
-if you're experiencing issues, contact us via any preferred method on [the support page](/about/community).
+If you're experiencing issues, contact us via email: support@vetra.top.
 </section>

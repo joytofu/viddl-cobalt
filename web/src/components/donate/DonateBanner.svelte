@@ -24,9 +24,7 @@
             </div>
             <div id="banner-subtitle">{$t("donate.banner.subtitle")}</div>
         </div>
-        <div id="banner-right">
-            <Meowbalt emotion="fast" />
-        </div>
+        
     </div>
     <div id="banner-background">
         <div id="banner-background-animation">
