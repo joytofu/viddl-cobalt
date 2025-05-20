@@ -42,6 +42,17 @@
 </nav>
 
 <style>
+    nav {
+        position: fixed; /* Makes the nav stay in place */
+        top: 0;          /* Aligns it to the top of the viewport */
+        left: 0;         /* Aligns it to the left of the viewport */
+        width: 100%;     /* Makes it span the full width */
+        background-color: #333; /* Example background */
+        color: white;    /* Example text color */
+        z-index: 1000;   /* Ensures it stays on top of other content */
+        overflow:  hidden
+}
+
     #sidebar,
     #sidebar-tabs,
     .sidebar-inner-container {

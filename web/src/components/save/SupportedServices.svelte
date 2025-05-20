@@ -88,6 +88,11 @@
 </div>
 
 <style>
+    .title {
+        color: #046f34;
+        font-size: 16px;
+    }
+
     #supported-services {
         display: flex;
         position: relative;

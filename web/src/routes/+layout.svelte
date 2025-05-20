@@ -250,8 +250,8 @@
     :global(html),
     :global(body) {
         margin: 0;
-        height: 100vh;
-        overflow: hidden;
+        #height: 100vh;
+        #overflow: hidden;
         overscroll-behavior-y: none;
     }
 
@@ -262,10 +262,10 @@
         grid-template-columns:
             calc(var(--sidebar-width) + var(--sidebar-inner-padding) * 2)
             1fr;
-        overflow: hidden;
+        #overflow: hidden;
         background-color: var(--sidebar-bg);
         color: var(--secondary);
-        position: fixed;
+        #position: fixed;
     }
 
     /* add padding for notch / dynamic island in landscape */

@@ -1,6 +1,6 @@
 {
     "name": "@imput/cobalt-api",
-    "description": "save what you love",
+    "description": "Easily download videos & MP3s from YouTube, TikTok, Twitter/X, Instagram & more with Vetra. Free, fast, and no registration needed. Paste URL & download now!",
     "version": "10.9.4",
     "author": "imput",
     "exports": "./src/cobalt.js",
