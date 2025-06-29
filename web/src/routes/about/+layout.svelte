@@ -31,7 +31,7 @@
             
         </PageNavSection>
 
-        <PageNavSection>
+        <!-- <PageNavSection>
             <PageNavTab
                 path="/about/terms"
                 title={$t("about.page.terms")}
@@ -45,7 +45,7 @@
                 iconColor="gray"
             />
             
-        </PageNavSection>
+        </PageNavSection> -->
     </svelte:fragment>
 
     <slot slot="content"></slot>

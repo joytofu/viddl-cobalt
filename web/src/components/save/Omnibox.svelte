@@ -30,6 +30,8 @@
     import IconSparkles from "$components/icons/Sparkles.svelte";
     import IconClipboard from "$components/icons/Clipboard.svelte";
 
+    import DownloaderHeader from './DownloaderHeader.svelte';
+
     let linkInput: Optional<HTMLInputElement>;
     let downloadButton: SvelteComponent;
 
@@ -37,6 +39,9 @@
 
     let isDisabled = false;
     let isLoading = false;
+
+    export let title: string = "Vetra: Free Online Video & Audio Downloader";
+    export let subtitle: string = "All Platforms, One Downloader. Save content from YouTube, TikTok, X, Instagram, Facebook & more!";
 
     $: isBotCheckOngoing = $turnstileEnabled && !$turnstileSolved;
 
@@ -125,11 +130,11 @@
 </script>
 
 <svelte:window on:keydown={handleKeydown} />
-
-
-        <section class="downloader-section">
-            <h1>Vetra: Free Online Video & Audio Downloader for YouTube, TikTok, X & More</h1>
-            <p class="subtitle">All Platforms, One Downloader. Save content from YouTube, TikTok, X, Instagram, Facebook & more!</p>
+        <section class="downloader-section" style="margin-bottom:440px">
+            <DownloaderHeader
+                title={title}
+                subtitle={subtitle}
+            />
             <div id="omnibox">
             <div
                 id="input-container"
@@ -206,7 +211,7 @@
         </div>
         </section>
 
-        <section class="content-section" id="how-to-use">
+        <!-- <section class="content-section" id="how-to-use">
             <h2>How to Use Vetra Video Downloader</h2>
             <p>Downloading your favorite videos and audio is simple with Vetra. Follow these easy steps:</p>
             <ol>
@@ -285,11 +290,11 @@
                 <dt>Q: Do I need to install any software or browser extension?</dt>
                 <dd>A: For most platforms, no software or extension is needed. You can download directly from your browser. For some specific features like downloading certain private content, a helper extension might be recommended, but it's usually optional for general use.</dd>
             </dl>
-        </section>
+        </section> -->
 
         <footer class="footer">
             <p>© <span id="currentYear"></span> Vetra. All rights reserved (for the tool, not downloaded content).</p>
-            <p>By continuing, you agree to our <a href="/about/terms" target="_blank">Terms of Service</a> and <a href="/about/privacy" target="_blank">Privacy Policy</a>.</p>
+            <p>By continuing, you agree to our <a href="/terms" target="_blank">Terms and Conditions</a> and <a href="/privacy-policy" target="_blank">Privacy Policy</a>.</p>
             <p><strong>Disclaimer:</strong> Vetra is intended for downloading publicly available content or content for which you have the rights or permission to download. Please respect copyright laws and the terms of service of the platforms you are downloading from.</p>
         </footer>
     

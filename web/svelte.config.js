@@ -26,6 +26,8 @@ const config = {
         sveltePreprocess(),
         mdsvex({
             extensions: ['.md'],
+            // 添加ignore选项排除博客文章目录
+            ignore: ['**/routes/blogs/posts/*.md'],
             layout: {
                 about: join(
                     dirname(fileURLToPath(import.meta.url)),
@@ -44,10 +46,15 @@ const config = {
             // these options are set automatically — see below
             pages: 'build',
             assets: 'build',
-            fallback: '404.html',
+            fallback: 'index.html',
             precompress: false,
-            strict: true
+            //strict: true
         }),
+        prerender: {
+            entries: ['*'], // 预渲染所有页面
+            handleMissingId: 'warn', // 缺少ID时仅警告而非报错
+            crawl: true // 自动发现并预渲染所有链接页面
+        },
         csp: {
             mode: "hash",
             directives: {
@@ -72,12 +79,19 @@ const config = {
                     "challenges.cloudflare.com",
                     "www.googletagmanager.com",
                     "sha256-agcr0peth1MshZ7m/6LWnKnQ3oSm1JJPm1ueahsd0nA=",
+                    "sha256-TKO57MzqeWoQiH4tRXrz0GQc3bcohvZfm/Y65BFxwtg=",
+                    "sha256-g67gIjM3G8yMbjbxyc3QUoVsKhdxgcQzCmSKXiZZo6s=",
+                    "sha256-kcBF6wQU5yeiBo0/AfyRI7c9sQsggxdflee5iI9Xwrw=",
+                    "sha256-8Qq2eH/+nyhuY31PMcSDb2dPRtRdUmhsFk8p9OYFSNM=",
+                    "sha256-qwnOt5R+RmUangW3myI4FOq2GE5Jg84xX07svu/BURQ=",
 
                     // eslint-disable-next-line no-undef
                     process.env.WEB_PLAUSIBLE_HOST ? process.env.WEB_PLAUSIBLE_HOST : "",
 
                     // hash of the theme preloader in app.html
                     "sha256-g67gIjM3G8yMbjbxyc3QUoVsKhdxgcQzCmSKXiZZo6s=",
+                    "sha256-kcBF6wQU5yeiBo0/AfyRI7c9sQsggxdflee5iI9Xwrw=",
+                    
                 ],
 
                 "frame-ancestors": ["none"]
@@ -90,7 +104,8 @@ const config = {
             pollInterval: 60000
         },
         paths: {
-            relative: false
+            //relative: false
+            base: ''
         },
         alias: {
             $components: 'src/components',

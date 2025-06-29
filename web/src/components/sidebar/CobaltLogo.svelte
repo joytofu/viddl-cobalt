@@ -3,7 +3,7 @@
 </script>
 
 <div id="cobalt-logo">
-    <img src="/favicon.png"  width="100%" height="100%"/>
+    <img src="/favicon.png"  width="100%" height="100%" alt="Vetra logo"/>
     
 </div>
 

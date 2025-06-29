@@ -13,6 +13,9 @@
     import IconComet from "@tabler/icons-svelte/IconComet.svelte";
     import IconHeart from "@tabler/icons-svelte/IconHeart.svelte";
     import IconInfoCircle from "@tabler/icons-svelte/IconInfoCircle.svelte";
+    import IconMailOpened from "@tabler/icons-svelte/IconMailOpened.svelte";
+    import IconBook from "@tabler/icons-svelte/IconBook.svelte";
+
 
     let screenWidth: number;
     let settingsLink = defaultNavPage("settings");
@@ -35,7 +38,8 @@
         <div id="sidebar-info" class="sidebar-inner-container">
             <SidebarTab name="settings" path={settingsLink} icon={IconSettings} />
             <SidebarTab name="donate" path="/donate" icon={IconHeart} />
-            
+            <SidebarTab name="blogs" path="/blogs" icon={IconBook} />
+            <SidebarTab name="contact" path="/contact-us" icon={IconMailOpened} />
             <SidebarTab name="about" path={aboutLink} icon={IconInfoCircle} />
         </div>
     </div>

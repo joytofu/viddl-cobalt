@@ -1,8 +1,10 @@
 {
-    "save": "save",
-    "settings": "settings",
-    "updates": "updates",
-    "donate": "donate",
-    "about": "about",
-    "remux": "remux"
+    "save": "Save",
+    "settings": "Settings",
+    "updates": "Updates",
+    "donate": "Donate",
+    "about": "About",
+    "remux": "Remux",
+    "contact": "Contact",
+    "blogs": "Blogs"
 }
